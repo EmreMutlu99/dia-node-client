@@ -51,6 +51,7 @@ shy_* → Service & Maintenance
 ote_* → Hotel / Tourism (Reservations, Rooms, Deposits)
 
 dia_* → DIA Membership / Users
+
 ---
 
 ## Installation
@@ -59,20 +60,23 @@ dia_* → DIA Membership / Users
 git clone https://github.com/your-repo/dia-node-client.git
 cd dia-node-client
 npm install
-Configuration
+```
+
+# Configuration
 Create a .env file in the project root with your DIA credentials:
 
-ini
-Code kopieren
+```bash
 DIA_WS_URL=https://your-dia-server.com/api/v3
 DIA_USERNAME=myuser
 DIA_PASSWORD=mypassword
 DIA_API_KEY=your-api-key-here
 DIA_FIRMA_KODU=1
 DIA_DONEM_KODU=1
-Usage
+```
+
+# Usage
 Run the example:
 
-bash
-Code kopieren
+```bash
 node example/example.js
+```
