@@ -5,11 +5,52 @@
 
 Currently supports **login/logout** and the **Restaurant (RST) module** (salons & reservations).
 
+
+
+## Installation
+
+```bash
+git clone https://github.com/your-repo/dia-node-client.git
+cd dia-node-client
+npm install
+```
+
+# Usage
+Run the example:
+
+```bash
+node example/example.js
+```
+
+
+# Import into another project
+
+If you cloned the repo into, for example, ~/projects/dia-node-client, you can import it like this:
+
+```bash
+const DiaClient = require("~/projects/dia-node-client/src/dia-node-client");
+```
+
+# Configuration
+Create a .env file in the project root with your DIA credentials:
+
+```bash
+DIA_WS_URL=https://diademo.ws.dia.com.tr/api/v3/
+DIA_USERNAME=myuser
+DIA_PASSWORD=mypassword
+DIA_API_KEY=your-api-key-here
+DIA_FIRMA_KODU=1
+DIA_DONEM_KODU=1
+```
+
+
 # To Do
 
 The DIA Web Service includes many other modules, identified by their three-letter prefixes.
 These can be implemented next:
 
+
+```bash
 ith_* → Import / Customs
 
 efa_* → e-Invoice / e-Delivery
@@ -51,32 +92,13 @@ shy_* → Service & Maintenance
 ote_* → Hotel / Tourism (Reservations, Rooms, Deposits)
 
 dia_* → DIA Membership / Users
+```
 
 ---
 
-## Installation
+# Support Development by Donating
 
-```bash
-git clone https://github.com/your-repo/dia-node-client.git
-cd dia-node-client
-npm install
-```
 
-# Configuration
-Create a .env file in the project root with your DIA credentials:
+If this project helps you, consider supporting it:
 
-```bash
-DIA_WS_URL=https://diademo.ws.dia.com.tr/api/v3/
-DIA_USERNAME=myuser
-DIA_PASSWORD=mypassword
-DIA_API_KEY=your-api-key-here
-DIA_FIRMA_KODU=1
-DIA_DONEM_KODU=1
-```
-
-# Usage
-Run the example:
-
-```bash
-node example/example.js
-```
+[![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://www.paypal.com/donate/?hosted_button_id=VR9NYMGPMB5YS)
