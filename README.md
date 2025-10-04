@@ -66,7 +66,7 @@ npm install
 Create a .env file in the project root with your DIA credentials:
 
 ```bash
-DIA_WS_URL=https://your-dia-server.com/api/v3
+DIA_WS_URL=https://diademo.ws.dia.com.tr/api/v3/
 DIA_USERNAME=myuser
 DIA_PASSWORD=mypassword
 DIA_API_KEY=your-api-key-here
